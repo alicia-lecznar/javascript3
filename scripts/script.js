@@ -7,7 +7,7 @@ class AddressBook{
 }
 add(name, email, phone, relation){
     let newContact= new Contact(name, email, phone, relation);
-    this.contacts.push(newContacts);
+    this.contacts.push(newContact);
 }
  
 
@@ -23,14 +23,14 @@ if (index >= 0){
 }
 print(){
     for(let i = 0; i<this.contacts.length; i++){
-    console.log("for", this.contacts[i])
+    console.log(this.contacts[i])
         }
     }
 }
 
 //for(const contact of this.contacts){
 //  console.log("for of:", contact);
-}
+
 
 // this.contacts.forEach(contact =>{
 //     console.log('forEach', contact);
